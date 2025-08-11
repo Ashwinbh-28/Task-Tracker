@@ -82,7 +82,7 @@ def delete_task(task_id):
 def color_task(status):
     if status == "todo":
         return f"{RED}{status}{RESET}"
-    elif status == "in_progress":
+    elif status == "in-progress":
         return f"{YELLOW}{status}{RESET}"
     elif status == "done":
         return f"{GREEN}{status}{RESET}"
