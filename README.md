@@ -79,7 +79,6 @@ Each task should have the following properties:
 ## Getting Started
 Here are a few steps to help you get started with the Task Tracker CLI project:
 
-```plaintext
 1. Set Up Your Development Environment
 
 2. Choose a programming language you are comfortable with (e.g., Python, JavaScript, etc.).
@@ -104,5 +103,4 @@ Test each feature individually to ensure they work as expected. Look at the JSON
 10. Finalizing the Project
 Ensure all features are implemented and tested.
 Clean up your code and add comments where necessary.
-```
 Happy coding!
