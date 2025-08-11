@@ -1,1 +1,23 @@
-
+[
+    {
+        "id": 1,
+        "description": "Buy groceries and cook dinner",
+        "status": "todo",
+        "created_at": "2025-08-12 00:02:47",
+        "updated_at": "2025-08-12 00:02:59"
+    },
+    {
+        "id": 2,
+        "description": "Study Python",
+        "status": "todo",
+        "created_at": "2025-08-12 00:02:52",
+        "updated_at": "2025-08-12 00:02:52"
+    },
+    {
+        "id": 3,
+        "description": "Make Task CLi",
+        "status": "done",
+        "created_at": "2025-08-12 00:12:34",
+        "updated_at": "2025-08-12 00:14:51"
+    }
+]
