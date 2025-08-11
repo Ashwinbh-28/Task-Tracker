@@ -103,4 +103,9 @@ Test each feature individually to ensure they work as expected. Look at the JSON
 10. Finalizing the Project
 Ensure all features are implemented and tested.
 Clean up your code and add comments where necessary.
+
+## Project Ideas
+
+1. Task Tracker CLI: https://roadmap.sh/projects/task-tracker
+
 Happy coding!
