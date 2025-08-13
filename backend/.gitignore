@@ -1,8 +1,17 @@
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
+
+# Environment variables
 .env
+
+# VS Code
 .vscode/
+
+# Database files
 *.db
 *.sqlite3
+
+# Log files
 *.log
