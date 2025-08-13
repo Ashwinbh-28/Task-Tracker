@@ -12,6 +12,5 @@ __pycache__/
 # Database files
 *.db
 *.sqlite3
-.gitignore
 # Log files
 *.log
