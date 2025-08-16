@@ -5,6 +5,7 @@
 from flask import Blueprint, request, jsonify
 from database import SessionLocal
 from models import Task
+from models import User
 
 # Blueprint allows us to separate routes from main app
 tasks_bp = Blueprint("tasks", __name__)
@@ -54,4 +55,32 @@ def delete_task(id):
     db.delete(task)
     db.commit()
     return jsonify({"message": "Task deleted"})
+
+# -----------------------------
+# Get profile
+@tasks_bp.route("/profile", methods=["GET"])
+def get_profile():
+    db = SessionLocal()
+    user = db.query(User).first()
+    if not user:
+        return jsonify({"name": "", "phone": ""})
+    return jsonify({"name": user.name, "phone": user.phone})
+
+# -----------------------------
+# Save or update profile
+@tasks_bp.route("/profile", methods=["POST"])
+def save_profile():
+    db = SessionLocal()
+    data = request.json
+    user = db.query(User).first()
+
+    if user:
+        user.name = data.get("name", user.name)
+        user.phone = data.get("phone", user.phone)
+    else:
+        user = User(name=data["name"], phone=data["phone"])
+        db.add(user)
+
+    db.commit()
+    return jsonify({"message": "Profile saved successfully"})
 
